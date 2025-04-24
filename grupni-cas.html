@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prijava za grupni čas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/global.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #f4c542;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      background-color: #f4c542;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e0ae1a;
+    }
+
+    .info-note {
+      font-size: 14px;
+      margin-top: 15px;
+      color: #666;
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Prijava za grupni čas</h2>
+
+    <form action="https://formsubmit.co/fmrdak@gmail.com" method="POST">
+      <label for="ime">Ime i prezime</label>
+      <input type="text" id="ime" name="Ime i prezime" required>
+
+      <label for="telefon">Broj telefona</label>
+      <input type="text" id="telefon" name="Broj telefona" required>
+
+      <label for="razred">Razred</label>
+      <input type="text" id="razred" name="Razred" required>
+
+      <label for="gradivo">Koje oblasti bi voleli da predjemo na času?</label>
+      <textarea id="gradivo" name="Gradivo" rows="3" required></textarea>
+
+      <label for="termin">Termini koji Vam odgovaraju</label>
+      <input type="text" id="termin" name="Predloženi termin" placeholder="Npr. radni dani posle 18h, vikendom pre podne..." required>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/hvalagrupnicasovi.html">
+
+      <button type="submit">Pošalji prijavu</button>
+
+      <p class="info-note">
+        Termin je na upit i zavisi od broja prijavljenih učenika.<br>
+        Nakon prijave, bićete kontaktirani putem telefona.
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>

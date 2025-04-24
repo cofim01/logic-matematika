@@ -1,0 +1,173 @@
+ *{
+    margin: 0;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffef9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+.kontakt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.info-predavac {
+    background-color: #f9f9f9;
+    border-left: 6px solid #f4c542;
+    padding: 25px 30px;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.info-predavac ul {
+    padding-left: 20px;
+}
+
+.forma-pitanje {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+.forma input[type="text"],
+.forma input[type="email"],
+.forma textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.forma input[type="submit"] {
+    background-color: #f4c542;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.forma input[type="submit"]:hover {
+    background-color: #dba826;
+}
+
+.info-recenzije {
+    background-color: #f9f9f9;
+    border-left: 6px solid #f4c542;
+    padding: 25px 30px;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+    box-shadow: #333;
+}
+
+.info-recenzije h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.recenzije-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    margin-top: 10px;
+}
+
+.recenzije-okvir {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.recenzija {
+    display: none;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.recenzija span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.recenzija.aktivna {
+    display: block;
+}
+
+.strelica {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.strelica:hover {
+    color: #f4c542;
+}
+body{
+    background-image: url(../slike/pozadina-pocetna.jpg);
+    background-size: cover;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.info-predavac,
+.info-recenzije,
+.forma-pitanje {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.85); 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.info-predavac:hover,
+.info-recenzije:hover,
+.forma-pitanje:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.info-predavac,
+.info-recenzije,
+.forma-pitanje {
+    border-radius: 12px;
+    padding: 35px 40px;
+}
+
