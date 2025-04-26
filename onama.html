@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="sr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Časovi Matematike - Nauči Me</title>
-    <script src="https://kit.fontawesome.com/5bd33e4989.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/registracija.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O nama - Logic matematika</title>
+    <script
+      src="https://kit.fontawesome.com/5bd33e4989.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/registracija.css" />
+  </head>
+  <body>
     <div class="meni-gornji" id="meni">
-        <a href="index.html" id="logo-ime">NAUČI ME.</a>
-        <a href="predmeti.html" id="pr"><i class="fa-solid fa-book" id="pr-ikonica"></i>PREDMETI</a>
-        <a href="tehnikeucenja.html" id="th"><i class="fa-solid fa-brain" id="th-ikonica"></i>TEHNIKE UČENJA</a>
-        <a href="onama.html" id="rg"><i class="fa-solid fa-user" id="rg-ikonica"></i>O NAMA </a>
-        <a href="javascript:void(0);" class="ikonica" onclick="funkcijaPadajuciMeni()"><i class="fa-solid fa-bars"></i></a>
+      <a href="index.html" id="logo-ime">LOGIC MATEMATIKA.</a>
+      <a href="predmeti.html" id="pr"
+        ><i class="fa-solid fa-book" id="pr-ikonica"></i>PAKETI</a
+      >
+      <a href="tehnikeucenja.html" id="th"
+        ><i class="fa-solid fa-brain" id="th-ikonica"></i>TEHNIKE UČENJA</a
+      >
+      <a href="onama.html" id="rg"
+        ><i class="fa-solid fa-user" id="rg-ikonica"></i>O NAMA
+      </a>
+      <a
+        href="javascript:void(0);"
+        class="ikonica"
+        onclick="funkcijaPadajuciMeni()"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
     </div>
 
     <main class="kontakt-container">
-        <section class="info-predavac" id="o-predavacu">
-            <h2 style="margin-bottom: 20px;">O predavaču</h2>
-            <p>Zovem se Filip i držim privatne časove matematike za osnovce, srednjoškolce i studente. Imam višegodišnje iskustvo u pripremi učenika za kontrolne, prijemne ispite i takmičenja.</p>
-            <ul>
-                <li>🎓 Diplomirani matematičar</li>
-                <li>📚 Iskustvo sa više od 150 učenika</li>
-                <li>💻 Časovi uživo i online</li>
-                <li>✅ Strpljiv i posvećen pristupu svakom učeniku</li>
-            </ul>
-        </section>
+      <section class="info-predavac" id="o-predavacu">
+        <h2 style="margin-bottom: 20px">O predavaču</h2>
+        <p>
+          Zovem se Filip i držim privatne časove matematike za osnovce,
+          srednjoškolce i studente. Imam višegodišnje iskustvo u pripremi
+          učenika za kontrolne, prijemne ispite i takmičenja.
+        </p>
+        <ul>
+          <li>🎓 Diplomirani matematičar</li>
+          <li>📚 Iskustvo sa više od 150 učenika</li>
+          <li>💻 Časovi uživo i online</li>
+          <li>✅ Strpljiv i posvećen pristupu svakom učeniku</li>
+        </ul>
+      </section>
 
-        <section class="info-recenzije">
-            <h2>Recenzije</h2>
-            <div class="recenzije-slider">
-                <button class="strelica levo" onclick="promeniRecenziju(-1)">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-        
-                <div class="recenzije-okvir">
-                    <div class="recenzija aktivna">
-                        <p>"Filip mi je pomogao da popravim ocenu iz matematike sa 2 na 5 za samo dva meseca! Časovi su jasni i zanimljivi."</p>
-                        <span>— Ana, 8. razred</span>
-                    </div>
-                    <div class="recenzija">
-                        <p>"Odlična priprema za prijemni. Sve pohvale!"</p>
-                        <span>— Marko, srednja škola</span>
-                    </div>
-                    <div class="recenzija">
-                        <p>"Zahvaljujući Filipu, položio sam ispit iz analize koji sam godinama odlagao."</p>
-                        <span>— Jovana, fakultet</span>
-                    </div>
-                </div>
-        
-                <button class="strelica desno" onclick="promeniRecenziju(1)">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
+      <section class="info-recenzije">
+        <h2>Recenzije</h2>
+        <div class="recenzije-slider">
+          <button class="strelica levo" onclick="promeniRecenziju(-1)">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="recenzije-okvir">
+            <div class="recenzija aktivna">
+              <p>
+                "Filip mi je pomogao da popravim ocenu iz matematike sa 2 na 5
+                za samo dva meseca! Časovi su jasni i zanimljivi."
+              </p>
+              <span>— Ana, 8. razred</span>
             </div>
-        </section>
+            <div class="recenzija">
+              <p>"Odlična priprema za prijemni. Sve pohvale!"</p>
+              <span>— Marko, srednja škola</span>
+            </div>
+            <div class="recenzija">
+              <p>
+                "Zahvaljujući Filipu, položio sam ispit iz analize koji sam
+                godinama odlagao."
+              </p>
+              <span>— Jovana, fakultet</span>
+            </div>
+          </div>
 
-        <section class="forma-pitanje" id="forma">
-            <form action="https://formsubmit.co/fmrdak@gmail.com" method="POST" class="forma">
-                <h2 style="margin-bottom: 20px;">Postavite pitanje</h2>
+          <button class="strelica desno" onclick="promeniRecenziju(1)">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
 
-                <label for="ime">Ime i prezime</label>
-                <input type="text" id="ime" name="Ime" required placeholder="Vaše ime i prezime">
+      <section class="forma-pitanje" id="forma">
+        <form
+          action="https://formsubmit.co/fmrdak@gmail.com"
+          method="POST"
+          class="forma"
+        >
+          <h2 style="margin-bottom: 20px">Postavite pitanje</h2>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="Email" required placeholder="Vaš e-mail">
+          <label for="ime">Ime i prezime</label>
+          <input
+            type="text"
+            id="ime"
+            name="Ime"
+            required
+            placeholder="Vaše ime i prezime"
+          />
 
-                <label for="pitanje">Vaše pitanje</label>
-                <textarea id="pitanje" name="Poruka" rows="5" required placeholder="Unesite pitanje u vezi časova, termina ili cene..."></textarea>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            required
+            placeholder="Vaš e-mail"
+          />
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="submit" value="Pošalji pitanje">
-            </form>
-        </section>
+          <label for="pitanje">Vaše pitanje</label>
+          <textarea
+            id="pitanje"
+            name="Poruka"
+            rows="5"
+            required
+            placeholder="Unesite pitanje u vezi časova, termina ili cene..."
+          ></textarea>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="submit" value="Pošalji pitanje" />
+        </form>
+      </section>
     </main>
 
     <div class="donji-meni">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl" id="mreza-f"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl" id="mreza-i"></i></a>
-        <a href="https://tviter.com/" target="_blank"><i class="fa-brands fa-twitter fa-xl" id="mreza-t"></i></a> 
-        <p id="copyright">Copyright© Nauči Me.</p>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><i class="fa-brands fa-instagram fa-xl" id="mreza-i"></i
+      ></a>
+      <p id="copyright">Copyright© 2025 Nauči Me.</p>
     </div>
-    <script src="script/global.js"></script> 
-</body>
+    <script src="script/global.js"></script>
+  </body>
 </html>
