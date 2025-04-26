@@ -119,7 +119,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 350px;
+  width: 250px;
   height: 300px;
   border: 2px solid rgb(238, 190, 45);
   border-radius: 6px;
@@ -192,7 +192,7 @@ body {
   border-radius: 12px;
   padding: 25px 25px;
   text-align: center;
-  width: 300px;
+  width: 260px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
@@ -248,23 +248,4 @@ body {
   background-color: #e5b200;
 }
 
-.naslov-sekcije {
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.naslov-sekcije h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0;
-  font-family: PlusJakartaSans, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Cantarell, Helvetica Neue, Ubuntu, sans-serif;
-}
 
