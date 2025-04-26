@@ -248,4 +248,8 @@ body {
   background-color: #e5b200;
 }
 
+.meni-gornji a i {
+  margin-right: 8px; /* mali razmak između ikone i teksta */
+}
+
 
