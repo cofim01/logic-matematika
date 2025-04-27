@@ -100,7 +100,7 @@ a:hover{
         justify-content: right;
     }
 }
-  @media screen and (max-width:600px){
+  @media screen and (max-width:500px){
     .meni-gornjirespozivnost {
         display: flex;
         flex-direction: column;
@@ -144,37 +144,6 @@ a:hover{
         padding-left: 10px;
         color: rgb(129, 125, 125);
         border-bottom: 0.5px solid black;
-    }
-    .ucenici{
-        width: 250px;
-        text-align: center;
-    }
-    .profesori{
-        width: 250px;
-        text-align: center;
-    }
-    .tehnike-ucenja{
-        width: 250px;
-        text-align: center;
-    }
-    
-
-    #slika-ucenici{
-        width: 230px;
-        height: 130px;
-        border-radius:6px;
-       
-        
-    }
-    #slika-profesori{
-        width: 230px;
-        height: 130px;
-        border-radius:6px;
-    }
-    #slika-tehnike-ucenja{
-        width: 230px;
-        height: 130px;
-        border-radius:6px;
     }
 
     .forma-registracija{
