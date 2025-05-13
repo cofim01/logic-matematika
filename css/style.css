@@ -161,6 +161,24 @@ html, body {
 }
 
 
+.ikonicaa {
+  font-size: 40px;
+  color: #0d0d0d;
+  position: absolute;
+  top: -20px; /* koliko iznad boxa da se pojavi */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+.sadrzaj2 > div {
+  position: relative;
+  padding-top: 40px;
+}
+
+
 /* Animizacije */
 @keyframes myAnim {
   0% {
